@@ -900,29 +900,29 @@ footer {
 }
 
 /* ==========================================================================
-   14.5. Founder Section Styles
+   14.5. Founder Section Styles (Updated for Larger Image)
    ========================================================================== */
 .about-founder {
-    padding: 5rem 2rem;
-    background-color: var(--light-cream); /* A soft background to separate it from white sections */
+    padding: 6rem 2rem;
+    background-color: var(--light-cream); 
     display: flex;
     justify-content: center;
 }
 
 .founder-container {
-    max-width: 1100px;
+    max-width: 1200px; /* Widened the container to give more space */
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1.2fr; /* Photo on left, text on right */
-    gap: 4rem;
-    align-items: center;
+    grid-template-columns: 1.1fr 1fr; /* 🚨 Swapped! Makes the photo column wider than the text column */
+    gap: 5rem; /* Increased gap for a more premium, spaced-out feel */
+    align-items: flex-start; /* Aligns both columns nicely at the top */
 }
 
 .founder-image-wrapper {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 20px; /* Slightly softer corners for the larger image */
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); /* Deeper shadow for the bigger element */
 }
 
 .founder-photo {
@@ -932,70 +932,10 @@ footer {
     object-fit: cover;
 }
 
-.founder-content-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.founder-subtitle {
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--brand-blue);
-    letter-spacing: 1px;
-}
-
-.founder-content-column h2 {
-    font-family: var(--font-heading);
-    font-size: 2.25rem;
-    color: var(--dark-charcoal);
-    margin: 0;
-}
-
-.founder-quote {
-    font-family: var(--font-body);
-    font-style: italic;
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: var(--dark-charcoal);
-    border-left: 4px solid var(--brand-blue);
-    padding-left: 1.25rem;
-    margin: 0.5rem 0;
-}
-
-.founder-story {
-    font-size: 1rem;
-    color: var(--gray-muted);
-    line-height: 1.7;
-    margin: 0;
-}
-
-.founder-signature {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.signature-name {
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--dark-charcoal);
-}
-
-.signature-title {
-    font-size: 0.9rem;
-    color: var(--brand-blue);
-    font-weight: 600;
-}
-
 /* Responsive adjustments for tablet and mobile */
 @media (max-width: 992px) {
     .founder-container {
-        gap: 2.5rem;
+        gap: 3rem;
     }
 }
 
@@ -1005,22 +945,14 @@ footer {
     }
     
     .founder-container {
-        grid-template-columns: 1fr; /* Stack photo and text vertically on mobile */
-        gap: 2.5rem;
+        grid-template-columns: 1fr; /* Stacks vertically on mobile */
+        gap: 3rem;
         text-align: center;
     }
     
     .founder-image-wrapper {
-        max-width: 350px;
-        margin: 0 auto; /* Center the image on mobile */
-    }
-    
-    .founder-quote {
-        border-left: none;
-        border-top: 2px solid var(--brand-blue);
-        border-bottom: 2px solid var(--brand-blue);
-        padding: 1rem 0;
-        margin: 1rem 0;
+        max-width: 450px; /* Allows a larger image footprint on mobile too */
+        margin: 0 auto; 
     }
 }
 
