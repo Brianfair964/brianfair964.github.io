@@ -3,89 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Spanish Philippines - Learn Spanish Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Go Spanish Philippines | Premium Online Spanish Academy</title>
+    
+    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to your external stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Hero Header -->
-    <header>
-        <h1>Go Spanish Philippines</h1>
-        <p>Learn Spanish with Confidence from Anywhere in the Philippines</p>
+    <!-- 1. Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Go<span>Spanish</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">Meet Your Teacher</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <a href="#booking" class="nav-cta">Book Free Trial</a>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">🇪🇸 Learn Spanish with Confidence</span>
+            <h1>Master Spanish Online</h1>
+            <p>Interactive lessons customized for ambitious learners and professionals in the Philippines. Start speaking from your very first class.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Book a Free Trial</a>
+                <a href="#courses" class="btn btn-secondary">View Courses</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>↓ Scroll to explore</span>
+            </div>
+        </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main>
-        
-        <!-- Welcome Section -->
-        <section class="welcome-section">
-            <h2>¡Hola! Welcome to Your Spanish Journey</h2>
-            <p>We help Filipino students, professionals, and travelers master the Spanish language through highly interactive, fun, and personalized online lessons. Whether you are starting from zero or preparing for official exams, we've got you covered.</p>
-        </section>
+    <!-- 3. Trust / Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Students Taught</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfaction Rate</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5★</span>
+                <span class="stat-label">Average Rating</span>
+            </div>
+        </div>
+    </section>
 
-        <!-- Why Choose Us Grid -->
-        <section class="why-choose-us">
-            <h3>Why Learn With Us?</h3>
-            <ul>
-                <li>
-                    <span>🇵🇭 🇪🇸</span>
-                    <h4>Tailored for Filipinos</h4>
-                    <p>We leverage our shared linguistic history to make learning Spanish natural and relatable.</p>
-                </li>
-                <li>
-                    <span>💻 🚀</span>
-                    <h4>100% Online & Flexible</h4>
-                    <p>Learn from the comfort of your home or office with schedules that fit your busy life.</p>
-                </li>
-                <li>
-                    <span>🗣️ ✨</span>
-                    <h4>Focus on Speaking</h4>
-                    <p>Don't just memorize grammar. Start speaking real, conversational Spanish from day one.</p>
-                </li>
-            </ul>
-        </section>
+    <!-- 4. Why Choose Go Spanish Philippines -->
+    <section id="why-us" class="why-choose-us">
+        <div class="section-header">
+            <h2>Why Learn With Us?</h2>
+            <p>The premium choice for busy professionals and dedicated language students.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎙️</div>
+                <h3>Live Online Classes</h3>
+                <p>No pre-recorded videos. Learn in real time with dynamic, engaging visual resources and immediate feedback.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Expert Instruction</h3>
+                <p>Personalized methodologies structured specifically to leverage shared linguistic roots between Tagalog and Spanish.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Flexible Schedule</h3>
+                <p>Book classes that fit seamlessly around your professional life, university classes, or work shifts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>DELE Preparation</h3>
+                <p>Step-by-step guidance to pass your official DELE certification exams from A1 all the way up to C2.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Our Courses Section -->
-        <section class="courses-section">
-            <h3>Our Specialized Courses</h3>
-            <p>Explore our programs designed to help you reach your personal, academic, or career goals.</p>
-            
-            <ul class="course-list">
-                <li>
-                    <h4>Spanish for Beginners</h4>
-                    <p>Master the essentials, build daily vocabulary, and conquer basic conversations.</p>
-                </li>
-                <li>
-                    <h4>Conversational Spanish</h4>
-                    <p>Boost your fluency and speak confidently with native speed and correct pronunciation.</p>
-                </li>
-                <li>
-                    <h4>DELE Exam Prep</h4>
-                    <p>Get intensive training to ace the official Spanish language certification (A1 to C2).</p>
-                </li>
-                <li>
-                    <h4>Private 1-on-1 Lessons</h4>
-                    <p>Get 100% of your tutor's attention with lessons customized precisely to your pace.</p>
-                </li>
-            </ul>
-        </section>
+    <!-- 5. Specialized Courses Section -->
+    <section id="courses" class="courses">
+        <div class="section-header">
+            <h2>Our Specialized Programs</h2>
+            <p>Tailored courses constructed to guide you from absolute zero to bilingual fluency.</p>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-badge">Most Popular</div>
+                <h3>Spanish for Beginners</h3>
+                <p>Build basic grammar, crucial vocabulary, and correct pronunciation rules. Start making sentences from day one.</p>
+                <span class="course-link">Learn more →</span>
+            </div>
+            <div class="course-card">
+                <h3>Conversational Fluency</h3>
+                <p>Boost your speaking confidence, break through fluency plateaus, and master daily real-world Spanish.</p>
+                <span class="course-link">Learn more →</span>
+            </div>
+            <div class="course-card">
+                <h3>DELE Exam Training</h3>
+                <p>Prepare thoroughly for the official DELE certificate with targeted mock exams and strategic oral practices.</p>
+                <span class="course-link">Learn more →</span>
+            </div>
+        </div>
+    </section>
 
-        <!-- Student Testimonial -->
-        <section class="testimonial">
-            <blockquote>
-                "The lessons are so engaging! I started as a absolute beginner, and within three months, I was able to hold basic conversations with my colleagues in Spain."
-                <cite>— Maria D., Manila</cite>
-            </blockquote>
-        </section>
+    <!-- 6. Student Testimonials (Slider Ready) -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Students Say</h2>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-container">
+                <!-- Single Testimonial Item (We will make this slide later with JS) -->
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"The structured lessons and native-level tips helped me pass my DELE A2 exam in record time. Best investment I've made for my career."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">👤</div>
+                        <div class="user-info">
+                            <h4>Maria C.</h4>
+                            <span>Manila, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Call to Action -->
-        <section class="cta-section">
-            <h3>Ready to speak Spanish?</h3>
-            <p>Book your first 30-minute trial class with one of our expert tutors completely free.</p>
-            <button>Book a Free Trial</button>
-        </section>
+    <!-- 7. Meet Your Teacher -->
+    <section id="about" class="about-teacher">
+        <div class="about-container">
+            <div class="teacher-image">
+                <div class="image-placeholder">🧑‍🏫</div>
+            </div>
+            <div class="teacher-details">
+                <span class="section-subtitle">Your Guide to Fluency</span>
+                <h2>¡Hola! Meet Your Instructor</h2>
+                <p>I am passionate about helping students break down the barriers of language learning. Drawing on deep academic knowledge and structural teaching frameworks, my lessons target your unique weak areas, keeping you motivated and supported at every stage.</p>
+                <p>My goal is to make Spanish highly accessible, leveraging familiar historical patterns and vocabulary to speed up your learning curve.</p>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- 8. Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>Choose the track that fits your budget and study pace.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Trial Class</h3>
+                <div class="price">FREE</div>
+                <p class="price-desc">Assess your current level and experience our personalized teaching methodology.</p>
+                <ul>
+                    <li>30-minute session</li>
+                    <li>Level assessment</li>
+                    <li>Customized study plan</li>
+                </ul>
+                <a href="#booking" class="btn btn-outline">Book Now</a>
+            </div>
+            <div class="price-card popular">
+                <div class="card-badge">Best Value</div>
+                <h3>Standard Package</h3>
+                <div class="price">₱1,200<span> / session</span></div>
+                <p class="price-desc">Perfect for consistent learners striving to make rapid, steady progress.</p>
+                <ul>
+                    <li>60-minute private 1-on-1</li>
+                    <li>All learning materials included</li>
+                    <li>Flexible booking & rescheduling</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary">Choose Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Booking / Contact -->
+    <section id="booking" class="booking-section">
+        <div class="booking-container">
+            <h2>Begin Your Spanish Adventure</h2>
+            <p>Schedule your free 30-minute trial session today. Let's discuss your goals and find the perfect path for you.</p>
+            <button class="btn btn-primary btn-large">Claim Your Free Class</button>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-logo">Go<span>Spanish</span></p>
+            <p>&copy; 2026 Go Spanish Philippines. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
