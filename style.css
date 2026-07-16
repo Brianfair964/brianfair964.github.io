@@ -903,11 +903,25 @@ footer {
    ========================================================================== */
 .teachers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Forces exactly 3 columns on desktop, wraps beautifully on tablets/mobile */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2.5rem;
-    max-width: 1000px;
+    max-width: 1200px; /* Widened slightly to give 3 cards plenty of breathing room */
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .teachers-grid {
+        grid-template-columns: repeat(2, 1fr); /* Drops to 2 per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers-grid {
+        grid-template-columns: 1fr; /* Drops to 1 per row on phones */
+    }
 }
 
 .teacher-card {
