@@ -974,8 +974,51 @@ footer {
     color: var(--gray-muted);
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    flex-grow: 1;
 }
+
+/* --- Added Experience List Styling --- */
+.teacher-experience {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.25rem;
+}
+
+.teacher-experience h4 {
+    font-family: var(--font-heading); /* Uses beautiful Quicksand */
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--brand-blue);
+    margin-bottom: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.teacher-experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teacher-experience li {
+    font-family: var(--font-body), 'Inter', sans-serif; /* Uses Inter instead of default system font */
+    font-size: 0.95rem;
+    color: var(--dark-charcoal); /* Darker color for much better readability */
+    line-height: 1.6;
+    margin-bottom: 0.85rem;
+    position: relative;
+    padding-left: 1.75rem;
+}
+
+/* Bullet icon replacement */
+.teacher-experience li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: var(--brand-blue);
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* -------------------------------------- */
 
 .teacher-specialties {
     display: flex;
